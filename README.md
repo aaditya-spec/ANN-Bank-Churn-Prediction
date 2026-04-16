@@ -1,12 +1,39 @@
 # ANN Bank Churn Prediction
 
-This project predicts customer churn using ANN.
+## 📌 Project Overview
 
-## Model
-- ANN with sigmoid
-- Epochs: 10
-- Batch size: 25
+This project predicts whether a bank customer will leave (churn) or not using an Artificial Neural Network (ANN).
 
-## How to run
+## 🧠 Technologies Used
+
+* Python
+* TensorFlow / Keras
+* Pandas
+* NumPy
+* Scikit-learn
+
+## 📊 Dataset
+
+* Bank customer data
+* Features include: Credit Score, Geography, Gender, Age, Balance, etc.
+
+## ⚙️ Model
+
+* ANN (Artificial Neural Network)
+* 2 Hidden Layers (ReLU activation)
+* Output Layer (Sigmoid)
+
+## 🚀 How to Run
+
+```bash
 pip install -r requirements.txt
-python model.py
+py model.py
+```
+
+## 📈 Output
+
+* Model Accuracy: ~84%
+
+## 👨‍💻 Author
+
+Aaditya Pundir
