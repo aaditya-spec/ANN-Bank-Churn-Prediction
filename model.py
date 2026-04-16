@@ -39,3 +39,11 @@ model.fit(X_train, y_train, epochs=10, batch_size=32)
 # Evaluate
 loss, acc = model.evaluate(X_test, y_test)
 print("Accuracy:", acc)
+import joblib
+import json
+
+model.save("artifacts/churn_model.keras")
+joblib.dump(sc, "artifacts/scaler.pkl")
+
+with open("artifacts/columns.json", "w") as f:
+    json.dump(list(X.columns), f)
