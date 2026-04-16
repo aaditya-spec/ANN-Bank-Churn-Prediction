@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 streamlit==1.32.0
 pandas==2.2.2
 numpy==1.26.4
 scikit-learn==1.4.2
 joblib==1.4.2
+=======
+streamlit
+tensorflow
+pandas
+numpy
+scikit-learn
+joblib
+>>>>>>> a261259 (fixed requirements and model path)
