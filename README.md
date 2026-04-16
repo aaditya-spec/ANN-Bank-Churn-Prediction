@@ -1,126 +1,100 @@
-# 🧠 ANN Bank Churn Prediction
+# 📊 Customer Churn Prediction using ANN
 
-## 📌 Project Overview
-
-Customer churn is a major challenge for banks. This project uses an Artificial Neural Network (ANN) to predict whether a customer is likely to leave the bank.
-
-By identifying high-risk customers in advance, banks can take proactive steps to improve retention and reduce revenue loss.
+An interactive Machine Learning web application that predicts whether a customer will churn or stay using an Artificial Neural Network (ANN).
 
 ---
 
-## 🎯 Objectives
+## 🚀 Live Demo
 
-* Predict customer churn using machine learning
-* Build a deep learning model using ANN
-* Improve prediction accuracy with feature preprocessing
-* Understand customer behavior patterns
+👉 https://ann-bank-churn-prediction-h9ptjypi9m9z2rlduzmass.streamlit.app/
 
 ---
 
-## 📊 Dataset Description
+## 📂 GitHub Repository
 
-The dataset contains bank customer information with multiple features:
-
-* Credit Score
-* Geography
-* Gender
-* Age
-* Tenure
-* Balance
-* Number of Products
-* Has Credit Card
-* Is Active Member
-* Estimated Salary
-
-👉 Target Variable:
-
-* **Exited (0 = No, 1 = Yes)**
+👉 https://github.com/aaditya-spec/ANN-Bank-Churn-Prediction
 
 ---
 
-## ⚙️ Data Preprocessing
+## 🧠 About the Project
 
-* Removed unnecessary columns (RowNumber, CustomerId, Surname)
-* Applied **One-Hot Encoding** for categorical variables
-* Feature Scaling using **StandardScaler**
-* Train-Test Split (80% training, 20% testing)
+This project uses an Artificial Neural Network (ANN) to predict customer churn based on various features like credit score, balance, age, and more.
 
----
+It includes:
 
-## 🧠 Model Architecture
-
-Artificial Neural Network (ANN):
-
-* Input Layer
-* Hidden Layer 1 → 6 neurons (ReLU)
-* Hidden Layer 2 → 6 neurons (ReLU)
-* Output Layer → 1 neuron (Sigmoid)
-
-👉 Loss Function: Binary Crossentropy
-👉 Optimizer: Adam
+* Data preprocessing
+* Feature encoding
+* Model training using TensorFlow
+* Deployment using Streamlit
 
 ---
 
-## 🚀 Technologies Used
+## ✨ Features
+
+* 🔮 Predict customer churn probability
+* 📊 Displays risk percentage (Churn vs Retention)
+* 🎯 Clean and interactive UI
+* ⚡ Real-time predictions
+* 🧠 ANN-based classification model
+
+---
+
+## ⚙️ Tech Stack
 
 * Python
 * TensorFlow / Keras
-* Pandas
-* NumPy
 * Scikit-learn
+* Pandas & NumPy
+* Streamlit
 
 ---
 
-## 🛠️ Installation & Setup
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## ▶️ How to Run
-
-```bash
-py model.py
-```
-
----
-
-## 📈 Model Performance
-
-* Accuracy: **~84%**
-* Good balance between bias and variance
-* Suitable for real-world churn prediction scenarios
-
----
-
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```
 ANN-Bank-Churn-Prediction/
-│── model.py
-│── requirements.txt
-│── Artificial_Neural_Network_Case_Study_data.csv
-│── README.md
+│
+├── app.py
+├── model.py
+├── requirements.txt
+├── runtime.txt
+│
+├── artifacts/
+│   ├── churn_model.keras
+│   ├── scaler.pkl
+│   └── columns.json
+│
+├── Artificial_Neural_Network_Case_Study_data.csv
+└── README.md
 ```
 
 ---
 
-## 🔍 Key Insights
+## ⚙️ Installation & Run Locally
 
-* Customers with low activity are more likely to churn
-* Geography and balance significantly impact churn
-* ANN captures non-linear relationships effectively
+```bash
+git clone https://github.com/aaditya-spec/ANN-Bank-Churn-Prediction
+cd ANN-Bank-Churn-Prediction
+
+pip install -r requirements.txt
+streamlit run app.py
+```
 
 ---
 
-## 🚧 Future Improvements
+## 📌 Model Details
 
-* Hyperparameter tuning
-* Add Dropout layers to reduce overfitting
-* Try advanced models (XGBoost, Random Forest)
-* Deploy using Flask / Streamlit
+* Algorithm: Artificial Neural Network (ANN)
+* Activation Function: Sigmoid
+* Epochs: 10
+* Batch Size: 25
+
+---
+
+## 🎯 Prediction Logic
+
+* ≥ 50% → High Risk (Churn)
+* < 50% → Low Risk (Retention)
 
 ---
 
@@ -130,6 +104,6 @@ ANN-Bank-Churn-Prediction/
 
 ---
 
-## ⭐ Support
+## ⭐ If you like this project
 
-If you like this project, give it a ⭐ on GitHub!
+Give it a ⭐ on GitHub!
