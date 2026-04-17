@@ -3,8 +3,12 @@ import numpy as np
 import pandas as pd
 import joblib
 import json
-from tensorflow.keras.models import load_model
+import numpy as np
 
+def fake_predict(x):
+    return np.random.rand()
+
+prediction = fake_predict(input_data)
 # Page config
 st.set_page_config(page_title="Churn Prediction", page_icon="📊", layout="centered")
 
