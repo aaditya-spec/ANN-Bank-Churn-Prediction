@@ -3,8 +3,6 @@ import numpy as np
 import pandas as pd
 import joblib
 import json
-from tensorflow.keras.models import load_model
-
 # Page config
 st.set_page_config(page_title="Churn Prediction", page_icon="📊", layout="centered")
 
@@ -15,7 +13,7 @@ st.write("Fill the details below to predict whether a customer will churn or not
 
 # Load model safely
 try:
-    model = load_model("artifacts/churn_model.keras")
+    model = None
     scaler = joblib.load("artifacts/scaler.pkl")
 
     with open("artifacts/columns.json", "r") as f:
